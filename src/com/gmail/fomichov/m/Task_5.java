@@ -8,6 +8,10 @@ import java.util.Scanner;
  */
 public class Task_5 {
     public static void main(String[] args) {
+        start();
+    }
+
+    public static void start(){
         System.out.println("Введите число:");
         readInt(checkInt());
     }

@@ -9,6 +9,10 @@ package com.gmail.fomichov.m;
 public class Task_4 {
 
     public static void main(String[] args) {
+        start();
+    }
+
+    public static void start(){
         System.out.println(getMax(5, 10));
         System.out.println(getMax(5.2, 10.5));
     }

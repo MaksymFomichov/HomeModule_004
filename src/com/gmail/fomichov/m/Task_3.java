@@ -18,10 +18,10 @@ import java.util.Scanner;
 public class Task_3 {
 
     public static void main(String[] args) {
-        waitChoise();
+        start();
     }
 
-    private static void waitChoise() {
+    public static void start() {
         System.out.println("Рисуем квадрат - 1, рисуем прямоугольник - 2");
         switch (checkInt()) {
             case 1:
@@ -38,7 +38,7 @@ public class Task_3 {
                 break;
             default:
                 System.out.println("Неверный выбор, повторите попытку");
-                waitChoise();
+                start();
                 break;
         }
     }

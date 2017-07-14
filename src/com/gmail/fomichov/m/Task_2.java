@@ -3,9 +3,8 @@ package com.gmail.fomichov.m;
 /*
  Написать функцию drawRectangle которая рисует в консоли прямоугольник из символов '+' Аргументы функции: ширина прямугольника в символах, высота прямоугольника в символах
  Например 3 на 2 Вывод программы:
-  + +
-  + +
-  + +
+  + + +
+  + + +
  */
 
 import java.util.Scanner;
@@ -13,6 +12,10 @@ import java.util.Scanner;
 public class Task_2 {
 
     public static void main(String[] args) {
+        start();
+    }
+
+    public static void start() {
         System.out.println("Введите ширину прямоугольника:");
         int width = checkInt();
         System.out.println("Введите высоту прямоугольника:");

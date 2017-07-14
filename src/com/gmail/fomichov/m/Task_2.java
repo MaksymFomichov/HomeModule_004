@@ -1,21 +1,31 @@
 package com.gmail.fomichov.m;
 
 /*
- Написать функцию которая считает в консоли до числа Х. Аргументы функции: число Х Например Х = 5. Вывод программы: 1 2 3 4 5
+ Написать функцию drawRectangle которая рисует в консоли прямоугольник из символов '+' Аргументы функции: ширина прямугольника в символах, высота прямоугольника в символах
+ Например 3 на 2 Вывод программы:
+  + +
+  + +
+  + +
  */
 
 import java.util.Scanner;
 
-public class Task_1 {
+public class Task_2 {
 
     public static void main(String[] args) {
-        System.out.println("Введите число:");
-        readInt(checkInt());
+        System.out.println("Введите ширину прямоугольника:");
+        int width = checkInt();
+        System.out.println("Введите высоту прямоугольника:");
+        int height = checkInt();
+        drawRectangle(width, height);
     }
 
-    private static void readInt(int i) {
-        for (int j = 1; j <= i; j++) {
-            System.out.print(i - (i - j) + " ");
+    private static void drawRectangle(int width, int height) {
+        for (int i = 0; i < height; i++) {
+            for (int j = 0; j < width; j++) {
+                System.out.print("+");
+            }
+            System.out.println();
         }
     }
 

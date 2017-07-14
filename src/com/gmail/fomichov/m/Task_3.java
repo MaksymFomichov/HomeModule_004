@@ -46,7 +46,7 @@ public class Task_3 {
     private static void drawRectangle(int side) {
         for (int i = 0; i < side; i++) {
             for (int j = 0; j < side; j++) {
-                System.out.print("+");
+                System.out.print("+ ");
             }
             System.out.println();
         }

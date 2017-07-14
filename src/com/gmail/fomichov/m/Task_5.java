@@ -1,21 +1,21 @@
 package com.gmail.fomichov.m;
 
-/*
- Написать функцию которая считает в консоли до числа Х. Аргументы функции: число Х Например Х = 5. Вывод программы: 1 2 3 4 5
- */
-
 import java.util.Scanner;
 
-public class Task_1 {
-
+/**
+ * Решить задачу 1, без использования циклов. Использовав рекурсию.
+ * (Написать функцию которая считает в консоли до числа Х. Аргументы функции: число Х Например Х = 5. Вывод программы: 1 2 3 4 5)
+ */
+public class Task_5 {
     public static void main(String[] args) {
         System.out.println("Введите число:");
         readInt(checkInt());
     }
 
     private static void readInt(int i) {
-        for (int j = 1; j <= i; j++) {
-            System.out.print(j + " ");
+        if (i > 0) {
+            readInt(i - 1);
+            System.out.print(i + " ");
         }
     }
 
